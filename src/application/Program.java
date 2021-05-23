@@ -118,8 +118,7 @@ public class Program {
     		   							"\nErros Prato: " + errosPrato,     		   							
     		   							"Resultados", JOptionPane.INFORMATION_MESSAGE);
        
-       /*System.out.println("Acertos Copo: " + acertosCopo);
-       System.out.println("Erros Copo: " + errosCopo + "\n");*/  
+       // testando git
 	
 	}
 
