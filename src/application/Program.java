@@ -2,6 +2,8 @@ package application;
 
 import java.util.Locale;
 
+import javax.swing.JOptionPane;
+
 import entities.Copo;
 import entities.Jarra;
 import entities.Prato;
@@ -40,8 +42,8 @@ public class Program {
 	        }        
         }
         
-        System.out.println("Acertos Taça: " + acertosTaca);
-        System.out.println("Erros Taça: " + errosTaca + "\n");
+        /*System.out.println("Acertos Taça: " + acertosTaca);
+        System.out.println("Erros Taça: " + errosTaca + "\n");*/
         
         /* ------------------------------------------------------------------ */
         
@@ -62,8 +64,8 @@ public class Program {
 	        }        
         }
         
-       System.out.println("Acertos Prato: " + acertosPrato);
-       System.out.println("Erros Prato: " + errosPrato + "\n");
+       /*System.out.println("Acertos Prato: " + acertosPrato);
+       System.out.println("Erros Prato: " + errosPrato + "\n");*/
         
        /* ------------------------------------------------------------------ */
        
@@ -84,8 +86,8 @@ public class Program {
 	        }        
        }
        
-       System.out.println("Acertos Jarra: " + acertosJarra);
-       System.out.println("Erros Jarra: " + errosJarra + "\n");
+       /*System.out.println("Acertos Jarra: " + acertosJarra);
+       System.out.println("Erros Jarra: " + errosJarra + "\n");*/
 	
        /* ------------------------------------------------------------------ */
        
@@ -106,8 +108,18 @@ public class Program {
 	        }
        }
        
-       System.out.println("Acertos Copo: " + acertosCopo);
-       System.out.println("Erros Copo: " + errosCopo + "\n");  
+       JOptionPane.showMessageDialog(null, "Acertos Taça: " + acertosTaca + 
+    		   							"\nErros Taça: " + errosTaca +
+    		   							"\n\nAcertos Copo: " + acertosCopo + 
+    		   							"\nErros Copo: " + errosCopo +
+    		   							"\n\nAcertos Jarra: " + acertosJarra + 
+    		   							"\nErros Jarra: " + errosJarra +
+    		   							"\n\nAcertos Prato: " + acertosPrato + 
+    		   							"\nErros Prato: " + errosPrato,     		   							
+    		   							"Resultados", JOptionPane.INFORMATION_MESSAGE);
+       
+       /*System.out.println("Acertos Copo: " + acertosCopo);
+       System.out.println("Erros Copo: " + errosCopo + "\n");*/  
 	
 	}
 
