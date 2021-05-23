@@ -117,8 +117,6 @@ public class Program {
     		   							"\n\nAcertos Prato: " + acertosPrato + 
     		   							"\nErros Prato: " + errosPrato,     		   							
     		   							"Resultados", JOptionPane.INFORMATION_MESSAGE);
-       
-       // testando git
 	
 	}
 
