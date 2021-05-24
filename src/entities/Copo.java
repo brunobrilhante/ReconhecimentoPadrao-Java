@@ -15,14 +15,20 @@ public class Copo {
 	//Médoto para gerar os números aleatórios de acordo com cada atributo
 	public void gerarNumeros() {
 		if(espessuraTreinamento[0] == null) {
-			for(int i = 0; i < 1000; i++) {			
+			for(int i = 0; i < espessuraTreinamento.length; i++) {			
 				double randomValue = 1.1 + (1.5 - 1.1) * r.nextDouble();
-				espessuraTreinamento[i] = randomValue;
+				espessuraTreinamento[i] = randomValue;				
+			}
+			for(int i = 0; i < espessuraTreinamento.length; i++) {			
+				double randomValue = 1.1 + (1.5 - 1.1) * r.nextDouble();				
 				espessuraPrototipo[i] = randomValue;
 			}
-			for(int i = 0; i < 1000; i++) {
-				double randomValue = 4.2 + (6.7 - 4.2) * r.nextDouble();
-				formaTreinamento[i] = randomValue;
+			for(int i = 0; i < espessuraTreinamento.length; i++) {
+				double randomValue = 3.9 + (6.5 - 3.9) * r.nextDouble();
+				formaTreinamento[i] = randomValue;				
+			}
+			for(int i = 0; i < espessuraTreinamento.length; i++) {
+				double randomValue = 3.9 + (6.5 - 3.9) * r.nextDouble();				
 				formaPrototipo[i] = randomValue;
 			}
 		}

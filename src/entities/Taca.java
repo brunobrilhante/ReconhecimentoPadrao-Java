@@ -15,17 +15,22 @@ public class Taca {
 	//Médoto para gerar os números aleatórios de acordo com cada atributo
 	public void gerarNumeros() {
 		if(espessuraTreinamento[0] == null) {
-			for(int i = 0; i < 1000; i++) {			
+			for(int i = 0; i < espessuraTreinamento.length; i++) {			
 				double randomValue = 0.8 + (1.3 - 0.8) * r.nextDouble();
-				espessuraTreinamento[i] = randomValue;
+				espessuraTreinamento[i] = randomValue;				
+			}
+			for(int i = 0; i < espessuraTreinamento.length; i++) {			
+				double randomValue = 0.8 + (1.3 - 0.8) * r.nextDouble();				
 				espessuraPrototipo[i] = randomValue;
 			}
-			for(int i = 0; i < 1000; i++) {
+			for(int i = 0; i < espessuraTreinamento.length; i++) {
 				double randomValue = 4.2 + (6.7 - 4.2) * r.nextDouble();
-				formaTreinamento[i] = randomValue;
+				formaTreinamento[i] = randomValue;				
+			}
+			for(int i = 0; i < espessuraTreinamento.length; i++) {
+				double randomValue = 4.2 + (6.7 - 4.2) * r.nextDouble();				
 				formaPrototipo[i] = randomValue;
 			}
-
 		}
 	}
 

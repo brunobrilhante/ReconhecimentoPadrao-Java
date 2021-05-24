@@ -15,14 +15,20 @@ public class Prato {
 	//Médoto para gerar os números aleatórios de acordo com cada atributo
 	public void gerarNumeros() {
 		if(espessuraTreinamento[0] == null) {
-			for(int i = 0; i < 1000; i++) {			
+			for(int i = 0; i < espessuraTreinamento.length; i++) {			
 				double randomValue = 1.4 + (1.8 - 1.4) * r.nextDouble();
-				espessuraTreinamento[i] = randomValue;
+				espessuraTreinamento[i] = randomValue;				
+			}
+			for(int i = 0; i < espessuraTreinamento.length; i++) {			
+				double randomValue = 1.4 + (1.8 - 1.4) * r.nextDouble();				
 				espessuraPrototipo[i] = randomValue;
 			}
-			for(int i = 0; i < 1000; i++) {
+			for(int i = 0; i < espessuraTreinamento.length; i++) {
 				double randomValue = 3.7 + (5.9 - 3.7) * r.nextDouble();
-				formaTreinamento[i] = randomValue;
+				formaTreinamento[i] = randomValue;				
+			}
+			for(int i = 0; i < espessuraTreinamento.length; i++) {
+				double randomValue = 3.7 + (5.9 - 3.7) * r.nextDouble();				
 				formaPrototipo[i] = randomValue;
 			}
 		}
