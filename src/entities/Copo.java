@@ -54,30 +54,29 @@ public class Copo {
 	
 	//Método para mostrar os valores da base espessuraTreinamento[]
 	public void getEspessuraTreinamento() {		
-		for(double d : espessuraTreinamento) {
-			System.out.format("%.2f\n", d);
-		}		
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", espessuraTreinamento[i]);
+		}
 	}
 	
 	//Método para mostrar os valores da base formaTreinamento[]
 	public void getFormaTreinamento() {
-		for(double d : formaTreinamento) {
-			System.out.format("%.2f\n", d);
-		}			
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", formaTreinamento[i]);
+		}		
 	}
-		
+	
 	//Método para mostrar os valores da base espessuraPrototipo[]
 	public void getEspessuraPrototipo() {		
-		for(double d : espessuraPrototipo) {
-			System.out.format("%.2f\n", d);
-		}
-		
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", espessuraPrototipo[i]);
+		}		
 	}
 	
 	//Método para mostrar os valores da base formaPrototipo[]
 	public void getFormaPrototipo() {			
-		for(double d : espessuraPrototipo) {
-			System.out.format("%.2f\n", d);
-		}
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", formaPrototipo[i]);
+		}	
 	}
 }

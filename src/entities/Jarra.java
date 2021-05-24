@@ -51,4 +51,32 @@ public class Jarra {
 		}		
 		return somaEsp / espessuraPrototipo.length;	
 	}
+	
+	//Método para mostrar os valores da base espessuraTreinamento[]
+		public void getEspessuraTreinamento() {		
+			for(int i = 0; i < 1000; i++) {
+				System.out.format("%.2f\n", espessuraTreinamento[i]);
+			}
+		}
+		
+	//Método para mostrar os valores da base formaTreinamento[]
+	public void getFormaTreinamento() {
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", formaTreinamento[i]);
+		}		
+	}
+	
+	//Método para mostrar os valores da base espessuraPrototipo[]
+	public void getEspessuraPrototipo() {		
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", espessuraPrototipo[i]);
+		}		
+	}
+	
+	//Método para mostrar os valores da base formaPrototipo[]
+	public void getFormaPrototipo() {			
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", formaPrototipo[i]);
+		}	
+	}
 }
