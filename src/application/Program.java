@@ -19,15 +19,18 @@ public class Program {
         Jarra jarra = new Jarra();
         Prato prato = new Prato();
         Copo copo = new Copo();
-        
+               
+        //Gerando as bases de dados        
         taca.gerarNumeros();             
         jarra.gerarNumeros();
         copo.gerarNumeros();
         prato.gerarNumeros();
         
+        //Variáveis que vão armazenar os acertos e erros da Taça
         int acertosTaca = 0;
         int errosTaca = 0;
         
+        //Cálculos dos acertos e erros
         for(int i = 0; i < 1000; i++) {        	        
 	        double acertoTaca = Math.abs((taca.espessuraTreinamento[i] - taca.mediaEspessura()) + (taca.formaTreinamento[i] - taca.mediaForma()));		               
 	        double erroJarra = Math.abs((jarra.espessuraTreinamento[i] - jarra.mediaEspessura()) + (jarra.formaTreinamento[i] - jarra.mediaForma()));        	        
@@ -42,14 +45,11 @@ public class Program {
 	        }        
         }
         
-        /*System.out.println("Acertos Taça: " + acertosTaca);
-        System.out.println("Erros Taça: " + errosTaca + "\n");*/
-        
-        /* ------------------------------------------------------------------ */
-        
+        //Variáveis que vão armazenar os acertos e erros do Prato
         int acertosPrato = 0;
         int errosPrato = 0;
         
+        //Cálculos dos acertos e erros
         for(int i = 0; i < 1000; i++) {        	        
 	        double acertoPrato = Math.abs((prato.espessuraTreinamento[i] - prato.mediaEspessura()) + (prato.formaTreinamento[i] - prato.mediaForma())); 
 	        double erroJarra = Math.abs((jarra.espessuraTreinamento[i] - jarra.mediaEspessura()) + (jarra.formaTreinamento[i] - jarra.mediaForma()));        	        
@@ -63,15 +63,12 @@ public class Program {
 	        	errosPrato += 1;
 	        }        
         }
-        
-       /*System.out.println("Acertos Prato: " + acertosPrato);
-       System.out.println("Erros Prato: " + errosPrato + "\n");*/
-        
-       /* ------------------------------------------------------------------ */
        
+        //Variáveis que vão armazenar os acertos e erros da Jarra
        int acertosJarra = 0;
        int errosJarra = 0;
        
+       //Cálculos dos acertos e erros
        for(int i = 0; i < 1000; i++) {        	        
 	        double acertoJarra = Math.abs((jarra.espessuraTreinamento[i] - jarra.mediaEspessura()) + (jarra.formaTreinamento[i] - jarra.mediaForma())); 	        		 
 	        double erroPrato = Math.abs((prato.espessuraTreinamento[i] - prato.mediaEspessura()) + (prato.formaTreinamento[i] - prato.mediaForma()));        	        
@@ -86,14 +83,11 @@ public class Program {
 	        }        
        }
        
-       /*System.out.println("Acertos Jarra: " + acertosJarra);
-       System.out.println("Erros Jarra: " + errosJarra + "\n");*/
-	
-       /* ------------------------------------------------------------------ */
-       
+       //Variáveis que vão armazenar os acertos e erros do Copo
        int acertosCopo = 0;
        int errosCopo = 0;
        
+       //Cálculos dos acertos e erros
        for(int i = 0; i < 1000; i++) {        	        
 	        double acertoCopo = Math.abs((copo.espessuraTreinamento[i] - copo.mediaEspessura()) + (copo.formaTreinamento[i] - copo.mediaForma())); 
 	        double erroPrato = Math.abs((prato.espessuraTreinamento[i] - prato.mediaEspessura()) + (prato.formaTreinamento[i] - prato.mediaForma()));        	        
@@ -106,8 +100,9 @@ public class Program {
 	        else {
 	        	errosCopo += 1;
 	        }
-       }
+       }       
        
+       //Janela que abre mostrando os resultados
        JOptionPane.showMessageDialog(null, "Acertos Taça: " + acertosTaca + 
     		   							"\nErros Taça: " + errosTaca +
     		   							"\n\nAcertos Copo: " + acertosCopo + 
@@ -116,7 +111,7 @@ public class Program {
     		   							"\nErros Jarra: " + errosJarra +
     		   							"\n\nAcertos Prato: " + acertosPrato + 
     		   							"\nErros Prato: " + errosPrato,     		   							
-    		   							"Resultados", JOptionPane.INFORMATION_MESSAGE);
+    		   							"RESULTADOS", JOptionPane.INFORMATION_MESSAGE);
 	
 	}
 
