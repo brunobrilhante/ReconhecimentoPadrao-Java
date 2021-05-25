@@ -53,11 +53,11 @@ public class Jarra {
 	}
 	
 	//Método para mostrar os valores da base espessuraTreinamento[]
-		public void getEspessuraTreinamento() {		
-			for(int i = 0; i < 1000; i++) {
-				System.out.format("%.2f\n", espessuraTreinamento[i]);
-			}
+	public void getEspessuraTreinamento() {		
+		for(int i = 0; i < 1000; i++) {
+			System.out.format("%.2f\n", espessuraTreinamento[i]);
 		}
+	}
 		
 	//Método para mostrar os valores da base formaTreinamento[]
 	public void getFormaTreinamento() {
