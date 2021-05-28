@@ -1,10 +1,14 @@
 package entities;
 
+import java.util.Locale;
+
 import javax.swing.JOptionPane;
 
 public class Calculo {
 
 	public void start() {
+		
+		Locale.setDefault(Locale.US);
 		
 		//Instanciando as classes
 		Taca taca = new Taca();
@@ -92,7 +96,47 @@ public class Calculo {
 	        else {
 	        	errosCopo += 1;
 	        }
-       }       
+       }    
+       
+       System.out.println("==================TAÇA==================");
+	   System.out.println("-----Espessura-Media-----");
+	   taca.getEspessuraPrototipo();
+	   System.out.println("-----Espessura-Teste-----");
+	   taca.getEspessuraTreinamento();
+	   System.out.println("-----Forma-Media-----");
+	   taca.getFormaPrototipo();
+	   System.out.println("-----Forma-Teste-----");
+	   taca.getFormaTreinamento();	   
+	   
+	   System.out.println("==================COPO==================");
+	   System.out.println("-----Espessura-Media-----");
+	   copo.getEspessuraPrototipo();
+	   System.out.println("-----Espessura-Teste-----");
+	   copo.getEspessuraTreinamento();
+	   System.out.println("-----Forma-Media-----");
+	   copo.getFormaPrototipo();
+	   System.out.println("-----Forma-Teste-----");
+	   copo.getFormaTreinamento();	   
+	   
+	   System.out.println("==================JARRA==================");
+	   System.out.println("-----Espessura-Media-----");
+	   jarra.getEspessuraPrototipo();
+	   System.out.println("-----Espessura-Test-----");
+	   jarra.getEspessuraTreinamento();
+	   System.out.println("-----Forma-Media-----");
+	   jarra.getFormaPrototipo();
+	   System.out.println("-----Forma-Teste-----");
+	   jarra.getFormaTreinamento();	   
+	   
+	   System.out.println("==================PRATO==================");
+	   System.out.println("-----Espessura-Media-----");
+	   prato.getEspessuraPrototipo();
+	   System.out.println("-----Espessura-Teste-----");
+	   prato.getEspessuraTreinamento();
+	   System.out.println("-----Forma-Media-----");
+	   prato.getFormaPrototipo();
+	   System.out.println("-----Forma-Teste-----");
+	   prato.getFormaTreinamento();	
        
        //Janela que abre mostrando os resultados
        JOptionPane.showMessageDialog(null, "Acertos Taça: " + acertosTaca + 
